@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artesano Estudio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="topo">
-      
+      <img src="img/hero-atelie.jpg" alt="">
         <h1>Artesano</h1>
         <p>Matéria | Luz | Espaço</p>
         <p>Estúdio de objetos | Edição de inverno</p>
-        <p>2026</p>
+        <p>— 2026 —</p>
     </header>
     <nav>
-        <a href="#inicio">Início</a>
+        <a href="#topo">Início</a>
         <a href="#estudio">Estúdio</a>
         <a href="#colecoes">Coleções</a>
         <a href="#topo" aria-label="voltar para o topo">A</a>
@@ -139,8 +142,36 @@
     <section id="contato">
         <h2>Peça o catálogo</h2>
         <p>A edição de inverno abre em 14 de setembro. Deixe seu contato e enviamos o catálogo impresso, com as medidas e os preços de cada peça.</p>
-
+<form>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+     <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+    <fieldset>
+        <legend>O que te interessa</legend>
+        <label>
+            <input type="radio" id="catalogo" name="interesse" value="catalogo" required>
+            Só o catálogo
+        </label>
+        <label>
+            <input type="radio" id="peca" name="interesse" value="peca" required>
+            Uma peça específica
+        </label>
+        <label>
+            <input type="radio" id="encomenda" name="interesse" value="encomenda" required>
+            Encomenda sob medida
+        </label>
+    </fieldset>
+<label for="recado">Recado (opcional)</label>
+<textarea id="recado" name="recado" placeholder="Uma frase basta."></textarea>
+<button type="submit">Enviar pedido</button>
+<p>Escrevemos de volta em até dois dias úteis.</p>
+</form>
     </section>
-    
+    <footer>
+        <p>Artesano</p>
+        <p>Estúdio de objetos · Desde 2019</p>
+        <a href="#topo">Voltar ao topo</a>
+    </footer>    
 </body>
 </html>
