@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -106,7 +110,7 @@ header p:first-of-type::after {
     content: "";
     width: 48px;
     height: 1px;
-    background-color: var(--cinza-risco);
+    background-color: var(--branco);
 }
 header p:last-of-type {
     letter-spacing: 0.40em;
